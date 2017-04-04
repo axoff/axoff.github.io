@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:"nevis";
+    src:url("nevis.ttf") format("truetype");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: 'Caviar Dreams Italic';
+    font-style: italic;
+    font-weight: 100;
+    src: local('Caviar Dreams Italic'), url('CaviarDreamsItalic.woff') format('woff');
+}
+
+body {
+    background: linear-gradient(to bottom right, #77c9d4, #57bc91);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header img {
+    height: 60%;
+}
+
+#container {
+    margin: 0 auto;
+    width: 960px;
+    padding: 40px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+header h1, header h2 {
+    width: 60%;
+    margin: 0 auto;
+}
+header h1 {
+    text-transform: uppercase;
+    font-family: 'nevis';
+    color: white;
+    font-size: 60px;
+}
+
+header h2 {
+    font-family: 'Caviar Dreams Italic';
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    font-weight: 100;
+    letter-spacing: -2px;
+    margin-top: -10px;
+    padding: 0 0 20px;
+}
+
+#container #content {
+    position: inherit;
+    width: 100%;
+    height 100%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+#content h1#porter {
+    font-family: 'Caviar Dreams Italic';
+    font-weight: 100;
+    font-size: 28px;
+    color: #A9A;
+    float: left;
+    position: absolute;
+    top: 145px;
+    left: 33%;
+}
+
+.leftImage {
+    width: 50%;
+    position: relative;
+    right: 65px;
+    bottom: 150px;
+    float: left;
+}
+
+.rightImage{
+    height: 300px; 
+    float: right;
+    position: relative;
+    bottom: 330px;
+    left: 45px;
+}
+
+.rightImage#btmVinyl {
+    margin-top: -75px;
+}
+
+#content p {
+    margin: 0 40%;
+    text-align: left;
+    width: 25%;
+    font-family: 'Lato';
+    font-weight: light;
+    color: #A9A;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#box1 {
+    height: 200px;
+    width: 38%;
+    position: relative;
+    left: 30%;
+    border-left: 1px solid #77c9d4;
+    border-bottom: 1px solid #77c9d4;
+}
+
+#box2 {
+    height: 700px;
+    width: 38%;
+    position: relative;
+    float: left;
+    left: 30%;
+    bottom: 853px;
+    border-right: 1px solid #77c9d4;
+    border-bottom: 1px solid #77c9d4;
+}
+
+#box3 {
+    height: 700px;
+    width: 38%;
+    position: relative;
+    left: 30%;
+    top: 483px;
+    border-left: 1px solid #77c9d4;
+    border-bottom: 1px solid #77c9d4;
+}
+
+#content h1#bovi {
+    font-family: 'Caviar Dreams Italic';
+    font-weight: 100;
+    font-size: 28px;
+    color: #A9A;
+    float: left;
+    position: absolute;
+    top: 845px;
+    left: 33%;
+}
