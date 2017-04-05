@@ -23,10 +23,6 @@ body {
     background-attachment: fixed;
 }
 
-header img {
-    height: 60%;
-}
-
 #container {
     margin: 0 auto;
     width: 960px;
@@ -35,119 +31,178 @@ header img {
     position: relative;
 }
 
+header img {
+    height: 464px;
+}
+
 header h1, header h2 {
-    width: 60%;
+    width: 460px;
     margin: 0 auto;
 }
+
 header h1 {
     text-transform: uppercase;
     font-family: 'nevis';
     color: white;
-    font-size: 60px;
+    font-size: 50px;
+    letter-spacing: -2px;
+    margin-top: 15px;
 }
 
 header h2 {
+        padding: 0 0 60px;
+}
+
+header h2,
+footer h2{
     font-family: 'Caviar Dreams Italic';
     color: white;
-    font-size: 30px;
+    font-size: 32px;
     text-align: left;
     font-weight: 100;
     letter-spacing: -2px;
     margin-top: -10px;
-    padding: 0 0 20px;
 }
 
 #container #content {
-    position: inherit;
     width: 100%;
-    height 100%;
-    background-color: white;
+    background-color: #fff;
     border-radius: 25px;
 }
 
-#content h1#porter {
+.bodycopy {
+    width: 345px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px solid #77c9d4;
+}
+
+.bodycopy h1{
     font-family: 'Caviar Dreams Italic';
     font-weight: 100;
-    font-size: 28px;
+    font-size: 24px;
     color: #A9A;
-    float: left;
     position: absolute;
-    top: 145px;
-    left: 33%;
+    left: 15px;
 }
 
-.leftImage {
-    width: 50%;
-    position: relative;
-    right: 65px;
-    bottom: 150px;
-    float: left;
+.bodycopy#firstBox h1{
+    bottom: -15px;
 }
 
-.rightImage{
-    height: 300px; 
-    float: right;
-    position: relative;
-    bottom: 330px;
-    left: 45px;
+.leftBorder h1,
+.rightBorder h1{
+    top: -50px;
 }
 
-.rightImage#btmVinyl {
-    margin-top: -75px;
+#firstBox {
+    height: 215px;
 }
 
-#content p {
-    margin: 0 40%;
+.rightBorder {
+    border-right: 1px solid #77c9d4;
+}
+
+.leftBorder, 
+#firstBox {
+    border-left: 1px solid #77c9d4;
+}
+
+.bodycopy p,
+footer p{
     text-align: left;
-    width: 25%;
     font-family: 'Lato';
     font-weight: light;
     color: #A9A;
+}
+
+.bodycopy p {
+    padding: 20 0 0 100;
+    position: absolute;
+    width: 210px;
+}
+
+.leftImage {
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+.rightImage { 
+    float: right;
+    position: relative;
+    clear: both;
+}
+
+.rightImage#btmVinyl,
+.rightImage#topVinyl {
+    left: 280px;
+    bottom: 410px;
+}
+
+.rightImage#btmVinyl {
+    margin-top: -70px;
+}
+
+.leftImage#vinylCover {
+    right: 308px;
+    top: 20px;
+}
+
+.bodycopy p#boviText {
+    padding-left: 15px;
+}
+
+.leftImage#boviCover {
+    width: 350px;
+    bottom: 200px;
+    right: 330px;
+}
+
+.rightImage#boviGlasses,
+.rightImage#boviTitle {
+    left: 240px;
+    bottom: 450px;
+    width: 105%;
+}
+
+.rightImage#boviGlasses {
+    margin-top: -40px;
+    margin-right: -50px;
+}
+
+footer {
+    column-count: 2;
+    column-gap: 50px;
+    padding: 25 200 150;
+}
+
+footer p {
+    height: 300px;
+    text-align: left;
+    color: white;
+}
+
+footer h2 {
+}
+
+form {
+    text-align: left;
+}
+
+#email_input {
+    margin: 10 0 10;
+}
+
+#message_input {
+    height: 100px;
+    width: 100%;
+    resize: none;
 }
 
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
-}
-
-#box1 {
-    height: 200px;
-    width: 38%;
-    position: relative;
-    left: 30%;
-    border-left: 1px solid #77c9d4;
-    border-bottom: 1px solid #77c9d4;
-}
-
-#box2 {
-    height: 700px;
-    width: 38%;
-    position: relative;
-    float: left;
-    left: 30%;
-    bottom: 853px;
-    border-right: 1px solid #77c9d4;
-    border-bottom: 1px solid #77c9d4;
-}
-
-#box3 {
-    height: 700px;
-    width: 38%;
-    position: relative;
-    left: 30%;
-    top: 483px;
-    border-left: 1px solid #77c9d4;
-    border-bottom: 1px solid #77c9d4;
-}
-
-#content h1#bovi {
-    font-family: 'Caviar Dreams Italic';
-    font-weight: 100;
-    font-size: 28px;
-    color: #A9A;
-    float: left;
-    position: absolute;
-    top: 845px;
-    left: 33%;
 }
