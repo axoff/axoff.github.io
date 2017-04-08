@@ -17,12 +17,93 @@
     src: local('Caviar Dreams Italic'), url('CaviarDreamsItalic.woff') format('woff');
 }
 
+@-webkit-keyframes fade {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@-moz-keyframes fade {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@-o-keyframes fade {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+@keyframes fade {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-moz-keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-o-keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* end Nick Pettit code */
+
 body {
     background: linear-gradient(to bottom right, #77c9d4, #57bc91);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+/*creates our main content container*/
 #container {
     margin: 0 auto;
     width: 960px;
@@ -31,8 +112,25 @@ body {
     position: relative;
 }
 
+/*fills container*/
+#container #content {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    
+    -webkit-animation: fade 2s;
+       -moz-animation: fade 2s;
+         -o-animation: fade 2s;
+            animation: fade 2s;
+}
+
 header img {
     height: 464px;
+    
+    -webkit-animation: pulse 3s infinite;
+       -moz-animation: pulse 3s infinite;
+         -o-animation: pulse 3s infinite;
+            animation: pulse 3s infinite;
 }
 
 header h1, header h2 {
@@ -64,15 +162,9 @@ footer h2{
     margin-top: -10px;
 }
 
-#container #content {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 25px;
-}
-
 .bodycopy {
     width: 345px;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
     position: relative;
     border-bottom: 1px solid #77c9d4;
@@ -100,6 +192,11 @@ footer h2{
     height: 215px;
 }
 
+#extralife {
+    border-bottom: none;
+    height: 700px;
+}
+
 .rightBorder {
     border-right: 1px solid #77c9d4;
 }
@@ -121,23 +218,31 @@ footer p{
     padding: 20 0 0 100;
     position: absolute;
     width: 210px;
+    line-height: 22px;
+}
+
+.rightDiv {
+    position: relative;
+    float: right;
+    height: 0px;
+}
+
+.leftDiv {
+    float: left;
+    height: 0px;
 }
 
 .leftImage {
     position: relative;
-    float: left;
-    clear: both;
 }
 
 .rightImage { 
-    float: right;
     position: relative;
-    clear: both;
 }
 
 .rightImage#btmVinyl,
 .rightImage#topVinyl {
-    left: 280px;
+    left: 320px;
     bottom: 410px;
 }
 
@@ -150,41 +255,141 @@ footer p{
     top: 20px;
 }
 
-.bodycopy p#boviText {
+.bodycopy p#boviText,
+.bodycopy p#megaText {
     padding-left: 15px;
 }
 
 .leftImage#boviCover {
     width: 350px;
-    bottom: 200px;
     right: 330px;
 }
 
 .rightImage#boviGlasses,
 .rightImage#boviTitle {
     left: 240px;
-    bottom: 450px;
+    bottom: 210px;
     width: 105%;
 }
 
 .rightImage#boviGlasses {
-    margin-top: -40px;
-    margin-right: -50px;
+    margin-top: -50px;
+    left: 280;
+}
+
+.leftImage#silhouette,
+.leftImage#mondrian {
+    right: 340px;
+}
+
+.leftImage#silhouette {
+    bottom: 85px;
+}
+
+.leftImage#mondrian {
+    bottom: 260px;
+    left: -225px;
+}
+
+.rightImage#window {
+    left: 330px;
+    width: 350px;
+    bottom: 60px;
+}
+
+.leftImage#boardLeft {
+    width: 150px;
+    bottom: 80px;
+    right: 470px;
+}
+
+.leftImage#boardRight {
+    width: 158px;
+    bottom: 80px;
+    right: 175px;
+}
+
+.leftImage#boardMid {
+    width: 25%;
+    right: 323px;
+    bottom: 410px;
+}
+
+.rightImage#twopage {
+    width: 300px;
+    left: 165px;
+    bottom: 390px;
+}
+
+.rightImage#ad1,
+.rightImage#ad2 {
+    width: 230px;
+}
+
+.rightImage#ad1 {
+    left: 325px;
+    bottom: 100px;
+}
+
+.rightImage#ad2 {
+    left: 200px;
+    bottom: 280px;
+}
+
+.leftDiv#elLeft{
+    position: relative;
+    top: 30px;
+}
+
+.leftImage#el_in {
+    bottom: 30px;
+    width: 55%;
+    right: 300px;
+}
+
+.leftImage#el_mid {
+    width: 40%;
+    right: 500px;
+    top: 95px;
+}
+
+.leftImage#el_out {
+    right: 230px;
+    top: 100px;
+}
+
+.rightImage#el_opening {
+    width: 200px;
+    left: 280px;
+    bottom: 120px;
+}
+
+.rightImage#el_cover {
+    width: 300px;
+    left: 328px;
+    bottom: 70px;
 }
 
 footer {
     column-count: 2;
     column-gap: 50px;
-    padding: 25 200 150;
+    width: 50%;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 footer p {
-    height: 300px;
     text-align: left;
     color: white;
 }
 
-footer h2 {
+#about,
+#contact {
+    display: block;
+}
+
+#about {
+    margin-top: 10px;
 }
 
 form {
@@ -193,12 +398,14 @@ form {
 
 #email_input {
     margin: 10 0 10;
+    padding: 5px;
 }
 
 #message_input {
     height: 100px;
     width: 100%;
     resize: none;
+    padding: 5px;
 }
 
 .clearfix:after {
