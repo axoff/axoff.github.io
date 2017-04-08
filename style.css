@@ -372,8 +372,8 @@ footer p{
 
 footer {
     column-count: 2;
-    column-gap: 50px;
-    width: 50%;
+    column-gap: 100px;
+    width: 60%;
     margin: 0 auto;
     padding: 15px;
 }
@@ -381,6 +381,7 @@ footer {
 footer p {
     text-align: left;
     color: white;
+    width: 300px;
 }
 
 #about,
