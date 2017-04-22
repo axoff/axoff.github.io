@@ -245,7 +245,21 @@ section {
     clear: both;
 }
 
-@media only screen and ( max-width: 568px ) {    
+@media only screen and ( max-width: 760px ) {    
+    
+    #head {
+        width: 100%;
+    }
+    
+    #container {
+        width: inherit;
+    }
+    
+    #el_img {
+        width: 85%;
+        left: 25px;
+    }
+    
     section {
         height: 900px;
         margin-bottom: 50px;
