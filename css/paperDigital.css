@@ -24,46 +24,6 @@
 	to{opacity: 1; top: 0px;}
 }
 
-@-webkit-keyframes fade-in-left {
-	from{opacity: 0; left: 300px;}
-	to{opacity: 1; left: 0px;}
-}
-
-@-moz-keyframes fade-in-left {
-	from{opacity: 0; left: 300px;}
-	to{opacity: 1; left: 0px;}
-}
-
-@-o-keyframes fade-in-left {
-	from{opacity: 0; left: 300px;}
-	to{opacity: 1; left: 0px;}
-}
-
-@keyframes fade-in-left {
-	from{opacity: 0; left: 300px;}
-	to{opacity: 1; left: 0px;}
-}
-
-@-webkit-keyframes fade-in-right {
-	from{opacity: 0; right: 300px;}
-	to{opacity: 1; right: 0px;}
-}
-
-@-moz-keyframes fade-in-right {
-	from{opacity: 0; right: 300px;}
-	to{opacity: 1; right: 0px;}
-}
-
-@-o-keyframes fade-in-right {
-	from{opacity: 0; right: 300px;}
-	to{opacity: 1; right: 0px;}
-}
-
-@keyframes fade-in-right {
-	from{opacity: 0; right: 300px;}
-	to{opacity: 1; right: 0px;}
-}
-
 /* Styles */
 
 html,
@@ -73,7 +33,22 @@ body,
 }
 
 .navbar-brand img{
-	height: 150%;
+	height: 130%;
+}
+
+.navbar-light {
+	background: #ffffff;
+	margin: 0;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 600;
+}
+
+.navbar-light a{
+	color: #a1b2c2;
+}
+
+.icon-bar {
+	background-color: #a1b2c2;
 }
 
 .cover {
@@ -127,8 +102,6 @@ p.lead{
 
 #about-block {
 	padding-top: 60px;
-	
-
 }
 
 #about-text {
@@ -140,10 +113,6 @@ p.lead{
 	letter-spacing: 1px;
 }
 
-#about .col-sm-4 {
-
-}
-
 section {
 	padding: 100px;
 }
@@ -151,6 +120,9 @@ section {
 #services, #contact, footer {
 	background: #a1b2c2;
 	color: #fde897;
+}
+
+#services {
 	padding: 50px;
 }
 
@@ -171,18 +143,6 @@ section {
 	position: relative;
 	margin-left: 25%;
 	margin-right: 25%;
-}
-
-#design {
-
-}
-
-#web {
-
-}
-
-#social {
-
 }
 
 #services p {
@@ -208,19 +168,25 @@ h2 + p {
 }
 
 #contact {
-padding: 10, 0, 20, 0;
-text-align: center;
+	padding-top: 30px;
+	padding-bottom: 5px;
+	text-align: center;
 }
 
 footer {
 	text-align: center;
-	padding-top: 0;
+	padding: 30px;
 }
 
 /* Media Queries */
 
 @media only screen and ( max-width: 568px ) {
-    
+  
+	.navbar-brand img{
+		height: 100%;
+	}
+
+	
 	cover h1 {
 		font-size: 40px;
 	}
