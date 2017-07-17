@@ -19,10 +19,12 @@
 
 		<!-- Custom styles for this template -->
 		<link href="css/paperDigital.css" rel="stylesheet">
-		<link href="css/lightbox.css" rel="stylesheet">
 		
 		<!-- Slider effects -->
 		<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+		
+		<!-- AOS Animations -->
+		<link rel="stylesheet" type="text/css" href="css/aos.css">
 
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -72,9 +74,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-							<img src="img/me.png" width="350px">
+							<img src="img/me.png" width="350px" data-aos="fade-right" data-aos-duration="800">
 					</div>
-					<div class="col-sm-8" id="about-block">
+					<div class="col-sm-8" id="about-block" data-aos="fade-left" data-aos-duration="800" >
 							<p id="about-text">I&rsquo;m an IT graduate from Ohio with a passion for both graphic design and web design. 
 							The past 10 years of my life have been consumed by both graphic and web design working on projects for local bands,
 							gaming tournaments, and radio shows. My work includes promotional posters, t-shirt designs, twitch.tv stream overlays, 
@@ -87,20 +89,20 @@
 		<section id="services">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4">
-							<img src="img/icons/design.svg">
+					<div class="col-sm-4" data-aos="fade-right" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">
+							<img src="img/icons/design.svg" id="design">
 							<h3>Graphic</h3>
 							<p>From your band's album cover to a new logo for your business, I specialize in creating new identities.</p>
 					</div>
 
-					<div class="col-sm-4">
-							<img src="img/icons/web.svg">
+					<div class="col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">
+							<img src="img/icons/web.svg" id="web">
 							<h3>Web</h3>
 							<p>I am well-versed in industry-standard programming languages like HTML, CSS, Javascript and JQuery.</p>
 					</div>
 
-					<div class="col-sm-4">
-							<img src="img/icons/socialmedia.svg">
+					<div class="col-sm-4" data-aos="fade-left" data-aos-duration="800" data-aos-anchor-placement="bottom-bottom">
+							<img src="img/icons/socialmedia.svg" id="social">
 							<h3>social media</h3>
 							<p>Boost your social media presence with professionally designed graphics for web promotion and visibility. </p>
 					</div>
@@ -141,13 +143,20 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 		<script type="text/javascript" src="engine1/jquery.js"></script>
 		<script type="text/javascript" src="engine1/wowslider.js"></script>
 		<script type="text/javascript" src="engine1/script.js"></script>
+		<script type="text/javascript" src="js/aos.js"></script>
+		
+		<script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
     <!--<script src="js/lightbox.min.js"></script>-->
   </body>
 </html>
