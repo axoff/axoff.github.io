@@ -1,3 +1,7 @@
+*{
+	box-sizing:border-box
+}
+
 html,
 body,
 .cover{
@@ -68,37 +72,32 @@ section {
     padding: 100px;
 }
 
-.line-top {
-    width: 100%;
-    height: 12px;
-    margin: 0 0 50px;
-    background: #fde897;
-}
-
-.line-bottom {
-    width: 100%;
-    height: 12px;
-    margin: 50px 0 0;
-    background: #fde897;
-}
-
-#services {
+#services, #contact, footer {
     background: #a1b2c2;
     color: #fde897;
     padding: 50px;
 }
 
-#services h3 {
-    text-align: center;
+#services h3, #contact h2 {
     color: white;
-    margin-bottom: 0;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 500;
 }
 
-#services h2 {
-    color: white;
+#services h3 {
+	margin-bottom: 0;
+}
+
+#services img {
+    width: 50%;
+    position: relative;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#services p {
+    letter-spacing: .03em;
 }
 
 h2 {
@@ -110,53 +109,26 @@ h2 {
     font-family: 'Helvetica', sans-serif;
 }
 
+#work {
+	height: auto;
+}
+
 h2 + p {
     text-align: center;
     margin-top: -60px;
 }
 
-#samples {
-    background: url('../img/samples_bg.png') top left no-repeat;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    height: 90%;
-}
-
-#samples img {
-    margin: 15px;
-    text-align: center;
-    transition: all .2s ease-in-out;
-    width: 25%;
-}
-
-.thumbnails:hover img {
-    opacity: .6;
-    transform: scale(.92);
-}
-
-#samples img:hover {
-    opacity: 1;
-    transform: scale(1);
-    box-shadow: 0 0 7px rgba(0,0,0,0.5);
-}
-
-#samples h2 {
-    color: #a1b2c2;
-    margin: 0;
+#contact {
+	padding: 10, 0, 20, 0;
 }
 
 footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-family: Georgia, Times, serif;
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 0;
 }
 
-footer a {
-    color: green;
-}
+/* Animations */
 
 /* Media Queries */
 
